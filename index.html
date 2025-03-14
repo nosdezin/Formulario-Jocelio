@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>Formulario</h1>
+        <input type="text" placeholder="Nome da Escola">
+        <input type="text" id="cpf" placeholder="CPF" maxlength="14" >
+
+        <h1>Pessoal</h1>
+        <input type="text" placeholder="Nome completo">
+
+        <div id="localizacao">
+            <select id="nacionalidade">
+                <option selected disabled>Nacionalidade</option>
+            </select>
+            <select id="estado">
+                <option selected disabled>Estado</option>
+            </select>
+            <select id="cidade">
+                <option selected disabled>Cidade</option>
+            </select>
+        </div>
+
+        <div id="genero">
+            <input type="radio" name="genero" id="Masculino">
+            <label for="Masculino">Masculino</label>
+            <input type="radio" name="genero" id="Feminino">
+            <label for="Feminino">Feminino</label>
+            <input type="radio" name="genero" id="Indefinido">
+            <label for="Indefinido">Genêro Indefinido</label>
+        </div>
+
+        <input type="submit" value="Gerar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
